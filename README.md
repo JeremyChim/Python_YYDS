@@ -15,7 +15,7 @@ if __name__ == '__main__':
 
     w = ttk.Window()
     a = app(w)
-    a.mainloop()
+    w.mainloop()
 
     '''上面代码作用如下'''
     # w = ttk.Window()
