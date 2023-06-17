@@ -25,7 +25,7 @@ if __name__ == '__main__':
 ```
 
 # 封装py文件的bat脚本
-```commandline
+```batch
 Pyinstaller -F -w -i app.ico app.py
 Pyinstaller -D -w -i app.ico app.py
 pause
