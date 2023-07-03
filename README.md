@@ -73,7 +73,7 @@
 
 3. 放入路径：D:\Python\Scripts\upx.exe（和pyinstaller.exe同级）
 
-4. 执行封装指令
+4. 封装，会发现exe包小了
 
 > 实测数据
 > 
@@ -88,7 +88,7 @@
 ```batch
 Pyinstaller -F -w -i app.ico app.py
 Pyinstaller -D -w -i app.ico app.py
-pause 使用UPX技术优化封装包
+pause
 ```
 
 # ttk的ui使用super()函数的原理
