@@ -342,6 +342,41 @@ if __name__ == '__main__':
     l = ttk.Label(text='----------版本：Demo----------')
     l.pack(side=RIGHT, padx=10)
     w.mainloop()
+```
+
+# ini配置文件的使用
+
+```ini
+[mysql]
+host=127.0.0.1
+port=3306
+user=root
+password=yourpassword
+dbname=test
+
+
+[redis]
+host=127.0.0.1
+port=6379
+password=88888
+db=0
+```
+
+```python
+import os
+from configparser import ConfigParser
+
+file_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "monitor_config.ini")
+cf = ConfigParser()
+
+cf.read('monitor_config.ini', encoding='utf-8')
+
+print(cf.sections())        # ['mysql', 'redis']
+print(cf.options('mysql'))  # 输出mysql下的所有配置项
+print(cf.items('mysql'))    # 输出mysql下的所有键值对
+
+print(cf.get('mysql', 'host'))  # 输出mysql 下配置项host的值
+print(cf.getint('mysql', 'port'))  # 输出port
 
 
 ```
