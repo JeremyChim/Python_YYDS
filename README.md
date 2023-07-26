@@ -377,6 +377,18 @@ print(cf.items('mysql'))    # 输出mysql下的所有键值对
 
 print(cf.get('mysql', 'host'))  # 输出mysql 下配置项host的值
 print(cf.getint('mysql', 'port'))  # 输出port
+```
 
+# 计算函数运行时间
 
+```python
+if __name__ == '__main__':
+    from time import time
+    a = time()
+
+    fun()
+
+    b = time()
+    c = '%.2f' % float(b-a)
+    print(f'运行时间：{c}秒')
 ```
