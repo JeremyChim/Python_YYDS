@@ -1,6 +1,6 @@
 # Python_YYDS
 
-小铭用来记录下Python技巧的一个小本子🤣
+小铭用来记录下Python技巧的一个小本子🤣😃🤪🍕🍔🍟🌭🍿
 
 # 安装Python环境
 
@@ -93,8 +93,6 @@ pause
 
 # ttk的ui使用super()函数的原理
 
-win.py
-
 ```python
 import ttkbootstrap as ttk
 
@@ -118,6 +116,8 @@ if __name__ == '__main__':
 ```
 
 # tkk模版
+
+[win.py](https://github.com/JeremyChim/Python_YYDS/blob/main/win.py)
 
 ```python
 # 外部函数调用（指定函数）
@@ -397,7 +397,7 @@ if __name__ == '__main__':
 
 # Subprocess函数的使用（adb交互）
 
-adb.py
+[adb.py](https://github.com/JeremyChim/Python_YYDS/blob/main/adb.py)
 
 ```python
 from subprocess import *
@@ -425,7 +425,9 @@ if __name__ == '__main__':
     print(out, err)
 ```
 
-byte.py
+
+
+[byte.py](https://github.com/JeremyChim/Python_YYDS/blob/main/byte.py)
 
 ```python
 def ret_byte(a:list):
@@ -445,7 +447,9 @@ if __name__ == '__main__':
     print(ret_byte(d))
 ```
 
-str.py
+
+
+[str.py](https://github.com/JeremyChim/Python_YYDS/blob/main/str.py)
 
 ```python
 def ret_str(a:bytes):
