@@ -93,6 +93,8 @@ pause
 
 # ttk的ui使用super()函数的原理
 
+win.py
+
 ```python
 import ttkbootstrap as ttk
 
@@ -391,4 +393,72 @@ if __name__ == '__main__':
     b = time()
     c = '%.2f' % float(b-a)
     print(f'运行时间：{c}秒')
+```
+
+# Subprocess函数的使用（adb交互）
+
+adb.py
+
+```python
+from subprocess import *
+from byte import ret_byte
+from str import ret_str
+
+
+def ret_out_err(a:list):
+    pop = Popen('adb shell', stdin=PIPE, stdout=PIPE, stderr=PIPE)
+    a = ret_byte(a)
+    out, err = pop.communicate(input=a, timeout=1000)
+    out, err = ret_str(out), ret_str(err)
+    return out, err
+
+if __name__ == '__main__':
+    a = ['ls','exit']
+    b = ['cat /oemdata/configs/7B120-1.cfg | grep ICCID','exit']
+    c = ['cat /oemdata/configs/7B120-1.cfg | grep SN','exit']
+    d = ['cat /oemdata/configs/7B120-1.cfg | grep ware','exit']
+    e = ['export DBUS_SESSION_BUS_ADDRESS=`cat /tmp/.default-msgbus-session-address` ',
+         'dbus-send --session --type=method_call --print-reply  --dest=com.yuantel.tbox.file    /com/yuantel/tbox/file  com.yuantel.tbox.file.cfg_data_set string:server string:ecall_auto_num string:01056162092',
+         'exit']
+
+    out, err = ret_out_err(d)
+    print(out, err)
+```
+
+byte.py
+
+```python
+def ret_byte(a:list):
+    a = "\n".join(a) + "\n"
+    a = a.encode('utf-8')
+    return a
+
+if __name__ == '__main__':
+    a = ['ls','exit']
+    b = ['cat /oemdata/configs/7B120-1.cfg | grep ICCID','exit']
+    c = ['cat /oemdata/configs/7B120-1.cfg | grep SN','exit']
+    d = ['cat /oemdata/configs/7B120-1.cfg | grep ware','exit']
+    e = ['export DBUS_SESSION_BUS_ADDRESS=`cat /tmp/.default-msgbus-session-address` ',
+         'dbus-send --session --type=method_call --print-reply  --dest=com.yuantel.tbox.file    /com/yuantel/tbox/file  com.yuantel.tbox.file.cfg_data_set string:server string:ecall_auto_num string:01056162092',
+         'exit']
+
+    print(ret_byte(d))
+```
+
+str.py
+
+```python
+def ret_str(a:bytes):
+    a = a.decode('utf-8')
+    a = a.replace('\r','')
+    return a
+
+if __name__ == '__main__':
+    a = b'ls\r\r\nexit\r\r\n/ # ls\r\r\nWEBSERVER       etc             oemapp          run             tmp\r\r\nbin             firmware        oemappbak       sbin            usr\r\r\nboot            home            oemappbakromfs  sdcard          var\r\r\nbuild.prop      lib             oemappromfs     share\r\r\ncache           linuxrc         oemdata         sys\r\r\ndata            media           oemlog          system\r\r\ndev             mnt             proc            target\r\r\n/ # exit\r\r\n'
+    b = b'cat /oemdata/configs/7B120-1.cfg | grep ICCID\r\r\nexit\r\r\n/ # cat /oemdata/configs/7B120-1.cfg | grep ICCID\r\r\n    ICCID="89860920740036750510";\r\r\n/ # exit\r\r\n'
+    c = b'cat /oemdata/configs/7B120-1.cfg | grep SN\r\r\nexit\r\r\n/ # cat /oemdata/configs/7B120-1.cfg | grep SN\r\r\n    TBOXSN="C52XBDLM11190020";\r\r\n/ # exit\r\r\n'
+    d = b'cat /oemdata/configs/7B120-1.cfg | grep ware\r\r\nexit\r\r\n/ # cat /oemdata/configs/7B120-1.cfg | grep ware\r\r\n      tbox_software = "1.09";\r\r\n      tbox_hardware = "1.00";\r\r\n      mcu_software = "220815V1.0";\r\r\n      um220_software="R3.6.0.0Build7723";\r\r\n      ec20_firmware = "EC20CEFARGR07A01M4G_OCPU_AMT";\r\r\n/ # exit\r\r\n'
+    e = b'export DBUS_SESSION_BUS_ADDRESS=`cat /tmp/.default-msgbus-session-address` \r\r\ndbus-send --session --type=method_call --print-reply  --dest=com.yuantel.tbox.file    /com/yuantel/tbox/file  com.yuantel.tbox.file.cfg_data_set string:server string:ecall_auto_num string:01056162092\r\r\nexit\r\r\n/ # export DBUS_SESSION_BUS_ADDRESS=`cat /tmp/.default-msgbus-session-address` \r\r\n/ # dbus-send --session --type=method_call --print-reply  --dest=com.yuantel.tbo\r\r\r\nx.file    /com/yuantel/tbox/file  com.yuantel.tbox.file.cfg_data_set string:serv\r\r\r\ner string:ecall_auto_num string:01056162092\r\r\nmethod return sender=:1.0 -> dest=:1.9 reply_serial=2\r\r\n/ # exit\r\r\n'
+
+    print(ret_str(d))
 ```
