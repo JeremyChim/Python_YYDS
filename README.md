@@ -425,8 +425,6 @@ if __name__ == '__main__':
     print(out, err)
 ```
 
-
-
 [byte.py](https://github.com/JeremyChim/Python_YYDS/blob/main/byte.py)
 
 ```python
@@ -446,8 +444,6 @@ if __name__ == '__main__':
 
     print(ret_byte(d))
 ```
-
-
 
 [str.py](https://github.com/JeremyChim/Python_YYDS/blob/main/str.py)
 
