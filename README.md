@@ -85,7 +85,7 @@
 
 # 封装py文件的bat脚本
 
-```batch
+```bash
 Pyinstaller -F -w -i app.ico app.py
 Pyinstaller -D -w -i app.ico app.py
 pause
