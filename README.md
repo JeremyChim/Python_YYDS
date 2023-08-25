@@ -59,7 +59,7 @@
    > ```python
    > # -*- coding: utf-8 -*-
    > # @Time ： ${DATE} ${TIME}
-   > # @Auth ： JeremyChim
+   > # @Auth ： Jeremy.Chim
    > # @File ：${NAME}.py
    > # @IDE ：${PRODUCT_NAME}
    > # @Github ：https://github.com/JeremyChim/
