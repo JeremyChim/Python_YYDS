@@ -62,7 +62,7 @@
    > # @Auth ： Jeremy.Chim
    > # @File ：${NAME}.py
    > # @IDE ：${PRODUCT_NAME}
-   > # @Github ：https://github.com/JeremyChim/
+   > # @Github ：https://github.com/JeremyChim/${PROJECT_NAME}
    > ```
 
 # 使用UPX技术优化封装包
