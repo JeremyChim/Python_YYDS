@@ -470,3 +470,18 @@ if __name__ == '__main__':
 
     print(ret_str(d))
 ```
+
+
+# QT-Designer创建MainWindow
+```python
+if __name__ == '__main__':
+    import sys
+    app = QtWidgets.QApplication(sys.argv)
+    MainWindow = QtWidgets.QMainWindow()
+
+    Ui = Ui_MainWindow()
+    Ui.setupUi(MainWindow)
+
+    MainWindow.show()
+    sys.exit(app.exec_())
+```
