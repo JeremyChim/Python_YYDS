@@ -42,7 +42,10 @@
 
 8. 安装常用环境包
    
-   > cmd > pip3 install PyQt5  
+   > pip3 install PyQt5
+   > 
+   > pip install PyQt5 -i https://pypi.douban.com/simple
+   > 
    > 文件 > 设置 > 项目 > Python解释器 > +
    > 
    > | 包名           | 用途       |
