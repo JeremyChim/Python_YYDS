@@ -42,7 +42,7 @@
 
 8. 安装常用环境包
    
-   > cmd > pip3 install PyQt5
+   > cmd > pip3 install PyQt5  
    > 文件 > 设置 > 项目 > Python解释器 > +
    > 
    > | 包名           | 用途       |
