@@ -54,6 +54,7 @@
 
 9. 添加PyCharm签名
    
+   > pip3 install PyQt5
    > 设置 > 编辑器 > 文件和代码模版 > Python Script
    > 
    > ```python
