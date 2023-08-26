@@ -69,6 +69,10 @@
    > # @Github ：https://github.com/JeremyChim/${PROJECT_NAME}
    > ```
 
+# QTPY5安装及使用方法
+
+> https://zhuanlan.zhihu.com/p/162866700
+
 # 使用UPX技术优化封装包
 
 1. 下载[UPX](https://upx.github.io/)
