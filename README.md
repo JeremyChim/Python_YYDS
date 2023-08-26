@@ -42,6 +42,7 @@
 
 8. 安装常用环境包
    
+   > cmd > pip3 install PyQt5
    > 文件 > 设置 > 项目 > Python解释器 > +
    > 
    > | 包名           | 用途       |
@@ -53,8 +54,7 @@
    > | folium       | 地图可视化    |
 
 9. 添加PyCharm签名
-   
-   > pip3 install PyQt5
+
    > 设置 > 编辑器 > 文件和代码模版 > Python Script
    > 
    > ```python
