@@ -69,6 +69,25 @@
    > # @Github ：https://github.com/JeremyChim/${PROJECT_NAME}
    > ```
 
+# 将.qrc文件转换为.py(import xx_rc，运行报错)
+```cmd
+pyrcc5 resource.qrc -o resource_rc.py
+```
+
+# QT-Designer创建MainWindow
+```python
+if __name__ == '__main__':
+    import sys
+    app = QtWidgets.QApplication(sys.argv)
+    MainWindow = QtWidgets.QMainWindow()
+
+    Ui = Ui_MainWindow()
+    Ui.setupUi(MainWindow)
+
+    MainWindow.show()
+    sys.exit(app.exec_())
+```
+
 # QTPY5安装及使用方法
 
 > https://zhuanlan.zhihu.com/p/162866700
@@ -92,20 +111,6 @@
 > | layout.exe         | 34.6 MB | 27.0 MB | 7.6 MB |
 
 
-# QT-Designer创建MainWindow
-```python
-if __name__ == '__main__':
-    import sys
-    app = QtWidgets.QApplication(sys.argv)
-    MainWindow = QtWidgets.QMainWindow()
-
-    Ui = Ui_MainWindow()
-    Ui.setupUi(MainWindow)
-
-    MainWindow.show()
-    sys.exit(app.exec_())
-```
-
 # 封装py文件的bat脚本
 ```batch
 Pyinstaller -F app.py
@@ -128,6 +133,9 @@ Pyinstaller -F -w -i app.ico app.py
 ::Pyinstaller -D -w -i app.ico app.py
 pause
 ```
+
+
+
 
 # ttk的ui使用super()函数的原理
 
