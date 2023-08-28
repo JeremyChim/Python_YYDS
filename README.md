@@ -91,11 +91,41 @@
 > | Great Wall.exe     | 22.5 MB | 15.5 MB | 7 MB   |
 > | layout.exe         | 34.6 MB | 27.0 MB | 7.6 MB |
 
+
+# QT-Designer创建MainWindow
+```python
+if __name__ == '__main__':
+    import sys
+    app = QtWidgets.QApplication(sys.argv)
+    MainWindow = QtWidgets.QMainWindow()
+
+    Ui = Ui_MainWindow()
+    Ui.setupUi(MainWindow)
+
+    MainWindow.show()
+    sys.exit(app.exec_())
+```
+
 # 封装py文件的bat脚本
+```batch
+Pyinstaller -F app.py
+```
+
+```batch
+Pyinstaller -D app.py
+```
+
+```batch
+Pyinstaller -F -w app.py
+```
+
+```batch
+Pyinstaller -D -w app.py
+```
 
 ```bash
 Pyinstaller -F -w -i app.ico app.py
-Pyinstaller -D -w -i app.ico app.py
+::Pyinstaller -D -w -i app.ico app.py
 pause
 ```
 
@@ -472,16 +502,3 @@ if __name__ == '__main__':
 ```
 
 
-# QT-Designer创建MainWindow
-```python
-if __name__ == '__main__':
-    import sys
-    app = QtWidgets.QApplication(sys.argv)
-    MainWindow = QtWidgets.QMainWindow()
-
-    Ui = Ui_MainWindow()
-    Ui.setupUi(MainWindow)
-
-    MainWindow.show()
-    sys.exit(app.exec_())
-```
