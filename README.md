@@ -69,308 +69,6 @@
    > # @Github ：https://github.com/JeremyChim/${PROJECT_NAME}
    > ```
 
-# 常用的变量命名缩写
-
-> [编程语言中常用的变量命名缩写_假如我年华正好的博客-CSDN博客](https://blog.csdn.net/qq_37851620/article/details/94731227)
-
-| 全称             | 缩写   | 翻译   |
-| -------------- | ---- | ---- |
-| calculate      | calc | 计算   |
-| addition       | add  | 加    |
-| subtraction    | sub  | 减    |
-| multiplication | mul  | 乘法   |
-| division       | div  | 除法   |
-| hexadecimal    | hex  | 十六进制 |
-
-| 全称         | 缩写   | 翻译    |
-| ---------- | ---- | ----- |
-| array      | arr  | 数组、集合 |
-| list       | lst  | 列表    |
-| Sequence   | seq  |       |
-| Segment(s) | seg  |       |
-| stack      | stk  | 栈     |
-| dictionary | dict | 字典    |
-| character  | char | 字符    |
-| string     | str  | 字符串   |
-| text       | txt  | 文本    |
-| float      | flt  | 浮动、浮点 |
-| number     | num  | 数量、编号 |
-| image      | img  | 图像    |
-| bitmap     | bmp  | 位图    |
-| table      | tbl  | 表     |
-| link       | lnk  | 链接    |
-| lable      | lbl  | 标签    |
-| flag       | flg  | 标志    |
-| container  | cntr | 容器    |
-| time stamp | ts   | 时间戳   |
-| length     | len  | 长度    |
-| positive   | pos  |       |
-| negative   | neg  |       |
-
-| 全称           | 缩写   | 翻译    |
-| ------------ | ---- | ----- |
-| statistic    | stat | 统计    |
-| summation    | sum  | 和     |
-| average      | avg  | 平均    |
-| maximum      | max  | 最大值   |
-| minimum      | min  | 最小值   |
-| middle       | mid  | 中值    |
-| increment    | inc  | 增加、增量 |
-| increase     | inc  | 增加    |
-| decrease     | dec  | 减少    |
-| different    | diff | 不同的   |
-| frequency    | freq | 频率    |
-| optimization | opt  | 最优    |
-| total        | tot  | 全部的   |
-| vertical     | vert | 垂直    |
-| horizontal   | horz | 水平    |
-
-| 全称        | 缩写        | 翻译    |
-| --------- | --------- | ----- |
-| row       | row       | 行     |
-| column    | col       | 列     |
-| positon   | pos       | 位置    |
-| point     | pt        | 点     |
-| pointer   | ptr       | 指针    |
-| index     | idx / ndx | 索引、指示 |
-| value     | val       | 值     |
-| reference | ref       | 引用    |
-
-| 全称          | 缩写       | 翻译    |
-| ----------- | -------- | ----- |
-| status      | stat     | 状态    |
-| original    | orig     | 原件    |
-| source      | src      | 源头    |
-| address     | addr     | 地址    |
-| coordinates | coord    | 坐标    |
-| previous    | pre      | 前一个   |
-| current     | cur      | 当前的   |
-| initalize   | init     | 初始化   |
-| destination | dst/dest | 目的    |
-| iteration   | itr/iter | 循环、迭代 |
-| count       | cnt      | 计数器   |
-
-| 全称        | 缩写       | 翻译    |
-| --------- | -------- | ----- |
-| temporary | temp或tmp | 临时    |
-| source    | src      | 源头    |
-| resource  | res      | 资源    |
-| result    | res      | 结果    |
-| return    | ret      | 返回    |
-| return    | rtn      | 返回    |
-| answer    | ans      | 响应、回答 |
-| buffer    | buf或buff | 缓冲区   |
-
-| 全称            | 缩写  | 翻译  |
-| ------------- | --- | --- |
-| database      | db  | 数据库 |
-| administrator | adm | 管理员 |
-| password      | pwd | 密码  |
-| user          | usr | 用户  |
-
-| 全称        | 缩写    | 翻译     |
-| --------- | ----- | ------ |
-| directory | dir   | 目录     |
-| document  | doc   | 文档     |
-| library   | lib   | 库      |
-| function  | func  | 函数     |
-| object    | obj   | 对象     |
-| argument  | arg   | 实参     |
-| instance  | ins   | 实例     |
-| variable  | var   | 变量     |
-| parameter | param | 参数(形参) |
-
-| 全称            | 缩写       | 翻译  |
-| ------------- | -------- | --- |
-| encode        | enc      | 编码  |
-| print         | prn      | 打印  |
-| delete        | del      | 删除  |
-| insert        | ins      | 插入  |
-| error         | err      | 错误  |
-| break         | brk      | 间断  |
-| package       | pkg      | 打包  |
-| escape        | esc      | 退出  |
-| execute       | exec     | 执行  |
-| command       | cmd      | 命令  |
-| configuration | config   | 配置  |
-| edit          | edt      | 编辑  |
-| display       | disp     | 显示  |
-| initialize    | init     | 初始化 |
-| trigger       | trig     | 触发  |
-| capture       | cap或capt | 捕获  |
-| system        | sys      | 系统  |
-| environment   | env      | 环境  |
-| window        | win(wnd) | 窗口  |
-| device        | dev      | 设备  |
-| message       | msg      | 消息  |
-| signal        | sig      | 信号  |
-| information   | info     | 信息  |
-| error         | err      | 错误  |
-
-> [.Net中控件的命名规则_基础应用_脚本之家 (jb51.net)](https://www.jb51.net/article/247298.htm)
-
-| 一、基本数据类型前缀 |        |
-| ---------- | ------ |
-| 数据类型       | 数据类型简写 |
-| Array      | arr    |
-| Boolean    | bln    |
-| Byte       | byt    |
-| Char       | chr    |
-| DateTime   | dtm    |
-| Decimal    | dec    |
-| Double     | dbl    |
-| Integer    | int    |
-| Long       | lng    |
-| Object     | obj    |
-| Short      | shr    |
-| Single     | sng    |
-| String     | str    |
-
-| 二、ADO.NET对象前缀 |        |
-| ------------- | ------ |
-| 控件类型          | 控件类型简写 |
-| Command       | cmd    |
-| Connection    | conn   |
-| DataAdapter   | da     |
-| DataColumn    | dcol   |
-| DataReader    | dr     |
-| DataRelation  | Drel   |
-| DataRow       | drow   |
-| DataSet       | ds     |
-| DataTable     | tbl    |
-| DataView      | dv     |
-| Parameter     | parm   |
-
-| 三、WinForm Control 命名规范  |         |
-| ----------------------- | ------- |
-| 控件类型                    | 控件类型简写  |
-| BackgroundWorker        | bgw     |
-| BindingNavigator        | bdn     |
-| BindingSource           | bds     |
-| Button                  | btn     |
-| CheckBox                | chk     |
-| CheckedListBox          | clst    |
-| ColorDialog             | cdlg    |
-| ComboBox                | cbo     |
-| ContextMenuStrip        | cms     |
-| CrystalReportViewer     | crv     |
-| DataGrid                | dgrd    |
-| DataGridView            | dgv     |
-| DataSet                 | dts     |
-| DateTimePicker          | dtp     |
-| DirectoryEntry          | dre     |
-| DirectorySearcher       | drs     |
-| DomainUpDown            | dud     |
-| ErrorProvider           | err     |
-| EventLog                | evl     |
-| FileSystemWatcher       | fsw     |
-| FlowLayoutPanel         | flp     |
-| FolderBrowserDialog     | fbdlg   |
-| FontDialog              | fdlg    |
-| Form                    | frm     |
-| GroupBox                | grp     |
-| HelpProvider            | hlp     |
-| HscrollBar              | hsb     |
-| ImageList               | ilst    |
-| Label                   | lbl     |
-| LinkLabel               | llbl    |
-| ListBox                 | lst     |
-| ListView                | lvw     |
-| MainMenu                | mmnu    |
-| MaskedTextBox           | mtx     |
-| MenuStrip               | ms      |
-| MessageQueue            | msq     |
-| MonthCalendar           | cdr     |
-| NotifyIcon              | icn     |
-| NumeircUpDown           | nud     |
-| OpenFileDialog          | ofdlg   |
-| PageSetupDialog         | psdlg   |
-| Panel                   | pnl     |
-| PerformanceCounter      | pfc     |
-| PictureBox              | pic     |
-| PrintDialog             | pdlg    |
-| PrintDocument           | pdc     |
-| PrintPreviewControl     | prv     |
-| PrintPreviewDialog      | ppd     |
-| Process                 | prc     |
-| ProgressBar             | pgb     |
-| PropertyGrid            | prg     |
-| RadioButton             | rbtn    |
-| ReportDocument          | rpd     |
-| ReportViewer            | rpv     |
-| RichTextBox             | rtx     |
-| SaveFileDialog          | sfdlg   |
-| SerialPort              | spt     |
-| ServiceController       | scl     |
-| SplitContainer          | spc     |
-| Splitter                | spl     |
-| StatusBar               | stb     |
-| StatusStrip             | ss      |
-| TabControl              | tab     |
-| TableLayoutPanel        | tlp     |
-| TextBox                 | txt     |
-| Timer                   | tmr     |
-| ToolBar                 | tlb     |
-| ToolStrip               | ts      |
-| ToolStripButton         | tsbtn   |
-| ToolStripContainer      | tsc     |
-| ToolStripDropDownButton | tsddbtn |
-| ToolStripLabel          | tslbl   |
-| ToolStripMenuItem       | tsmi    |
-| ToolStripSeparator      | tss     |
-| ToolStripSplitButton    | tssbtn  |
-| ToolTip                 | tip     |
-| TrackBar                | trb     |
-| TreeView                | tvw     |
-| VscrollBar              | vsb     |
-| WebBrowser              | wbs     |
-
-| 四、WebControl 命名规范      |        |
-| ---------------------- | ------ |
-| 控件类型                   | 控件类型简写 |
-| Adrotator              | adrt   |
-| BulletedList           | blst   |
-| Button                 | btn    |
-| Calendar               | cal    |
-| CheckBox               | chk    |
-| CheckBoxList           | chkl   |
-| CompareValidator       | valc   |
-| CustomValidator        | valx   |
-| DataGrid               | dg     |
-| DataList               | dl     |
-| DetailsView            | dtv    |
-| DropDownList           | ddl    |
-| FileUpLoad             | fup    |
-| FormView               | fmv    |
-| GridView               | grv    |
-| HiddenField            | hfld   |
-| HyperLink              | lnk    |
-| Image                  | img    |
-| ImageButton            | ibtn   |
-| ImageMap               | imap   |
-| Label                  | lbl    |
-| LinkButton             | lbtn   |
-| ListBox                | lst    |
-| Literal                | ltl    |
-| Localize               | loc    |
-| MultiView              | mvw    |
-| Panel                  | pnl    |
-| PlaceHolder            | plh    |
-| RadioButton            | rad    |
-| RadioButtonList        | radl   |
-| RangeValidator         | valg   |
-| RegularExpression      | reg    |
-| Repeater               | rpt    |
-| RequiredFieldValidator | valr   |
-| SubStitution           | subs   |
-| Table                  | tbl    |
-| TableCell              | tblc   |
-| TableRow               | tblr   |
-| TextBox                | txt    |
-| ValidationSummary      | vals   |
-| View                   | vw     |
-| Wizard                 | wiz    |
-
 # 将.qrc文件转换为.py(import xx_rc，运行报错)
 
 ```cmd
@@ -422,9 +120,6 @@ list_themes()
 WARNING:root:qt_material must be imported after PySide or PyQt!
 
 
-
-
-
 ['dark_amber.xml',
  'dark_blue.xml',
  'dark_cyan.xml',
@@ -445,8 +140,6 @@ WARNING:root:qt_material must be imported after PySide or PyQt!
  'light_teal.xml',
  'light_yellow.xml']
 ```
-
-
 
 # QTPY5安装及使用方法
 
@@ -865,3 +558,305 @@ if __name__ == '__main__':
 
     print(ret_str(d))
 ```
+
+# 常用的变量命名缩写
+
+> [编程语言中常用的变量命名缩写_假如我年华正好的博客-CSDN博客](https://blog.csdn.net/qq_37851620/article/details/94731227)
+
+| 全称             | 缩写   | 翻译   |
+| -------------- | ---- | ---- |
+| calculate      | calc | 计算   |
+| addition       | add  | 加    |
+| subtraction    | sub  | 减    |
+| multiplication | mul  | 乘法   |
+| division       | div  | 除法   |
+| hexadecimal    | hex  | 十六进制 |
+
+| 全称         | 缩写   | 翻译    |
+| ---------- | ---- | ----- |
+| array      | arr  | 数组、集合 |
+| list       | lst  | 列表    |
+| Sequence   | seq  |       |
+| Segment(s) | seg  |       |
+| stack      | stk  | 栈     |
+| dictionary | dict | 字典    |
+| character  | char | 字符    |
+| string     | str  | 字符串   |
+| text       | txt  | 文本    |
+| float      | flt  | 浮动、浮点 |
+| number     | num  | 数量、编号 |
+| image      | img  | 图像    |
+| bitmap     | bmp  | 位图    |
+| table      | tbl  | 表     |
+| link       | lnk  | 链接    |
+| lable      | lbl  | 标签    |
+| flag       | flg  | 标志    |
+| container  | cntr | 容器    |
+| time stamp | ts   | 时间戳   |
+| length     | len  | 长度    |
+| positive   | pos  |       |
+| negative   | neg  |       |
+
+| 全称           | 缩写   | 翻译    |
+| ------------ | ---- | ----- |
+| statistic    | stat | 统计    |
+| summation    | sum  | 和     |
+| average      | avg  | 平均    |
+| maximum      | max  | 最大值   |
+| minimum      | min  | 最小值   |
+| middle       | mid  | 中值    |
+| increment    | inc  | 增加、增量 |
+| increase     | inc  | 增加    |
+| decrease     | dec  | 减少    |
+| different    | diff | 不同的   |
+| frequency    | freq | 频率    |
+| optimization | opt  | 最优    |
+| total        | tot  | 全部的   |
+| vertical     | vert | 垂直    |
+| horizontal   | horz | 水平    |
+
+| 全称        | 缩写        | 翻译    |
+| --------- | --------- | ----- |
+| row       | row       | 行     |
+| column    | col       | 列     |
+| positon   | pos       | 位置    |
+| point     | pt        | 点     |
+| pointer   | ptr       | 指针    |
+| index     | idx / ndx | 索引、指示 |
+| value     | val       | 值     |
+| reference | ref       | 引用    |
+
+| 全称          | 缩写       | 翻译    |
+| ----------- | -------- | ----- |
+| status      | stat     | 状态    |
+| original    | orig     | 原件    |
+| source      | src      | 源头    |
+| address     | addr     | 地址    |
+| coordinates | coord    | 坐标    |
+| previous    | pre      | 前一个   |
+| current     | cur      | 当前的   |
+| initalize   | init     | 初始化   |
+| destination | dst/dest | 目的    |
+| iteration   | itr/iter | 循环、迭代 |
+| count       | cnt      | 计数器   |
+
+| 全称        | 缩写       | 翻译    |
+| --------- | -------- | ----- |
+| temporary | temp或tmp | 临时    |
+| source    | src      | 源头    |
+| resource  | res      | 资源    |
+| result    | res      | 结果    |
+| return    | ret      | 返回    |
+| return    | rtn      | 返回    |
+| answer    | ans      | 响应、回答 |
+| buffer    | buf或buff | 缓冲区   |
+
+| 全称            | 缩写  | 翻译  |
+| ------------- | --- | --- |
+| database      | db  | 数据库 |
+| administrator | adm | 管理员 |
+| password      | pwd | 密码  |
+| user          | usr | 用户  |
+
+| 全称        | 缩写    | 翻译     |
+| --------- | ----- | ------ |
+| directory | dir   | 目录     |
+| document  | doc   | 文档     |
+| library   | lib   | 库      |
+| function  | func  | 函数     |
+| object    | obj   | 对象     |
+| argument  | arg   | 实参     |
+| instance  | ins   | 实例     |
+| variable  | var   | 变量     |
+| parameter | param | 参数(形参) |
+
+| 全称            | 缩写       | 翻译  |
+| ------------- | -------- | --- |
+| encode        | enc      | 编码  |
+| print         | prn      | 打印  |
+| delete        | del      | 删除  |
+| insert        | ins      | 插入  |
+| error         | err      | 错误  |
+| break         | brk      | 间断  |
+| package       | pkg      | 打包  |
+| escape        | esc      | 退出  |
+| execute       | exec     | 执行  |
+| command       | cmd      | 命令  |
+| configuration | config   | 配置  |
+| edit          | edt      | 编辑  |
+| display       | disp     | 显示  |
+| initialize    | init     | 初始化 |
+| trigger       | trig     | 触发  |
+| capture       | cap或capt | 捕获  |
+| system        | sys      | 系统  |
+| environment   | env      | 环境  |
+| window        | win(wnd) | 窗口  |
+| device        | dev      | 设备  |
+| message       | msg      | 消息  |
+| signal        | sig      | 信号  |
+| information   | info     | 信息  |
+| error         | err      | 错误  |
+
+> [.Net中控件的命名规则_基础应用_脚本之家 (jb51.net)](https://www.jb51.net/article/247298.htm)
+
+| 一、基本数据类型前缀 |        |
+| ---------- | ------ |
+| 数据类型       | 数据类型简写 |
+| Array      | arr    |
+| Boolean    | bln    |
+| Byte       | byt    |
+| Char       | chr    |
+| DateTime   | dtm    |
+| Decimal    | dec    |
+| Double     | dbl    |
+| Integer    | int    |
+| Long       | lng    |
+| Object     | obj    |
+| Short      | shr    |
+| Single     | sng    |
+| String     | str    |
+
+| 二、ADO.NET对象前缀 |        |
+| ------------- | ------ |
+| 控件类型          | 控件类型简写 |
+| Command       | cmd    |
+| Connection    | conn   |
+| DataAdapter   | da     |
+| DataColumn    | dcol   |
+| DataReader    | dr     |
+| DataRelation  | Drel   |
+| DataRow       | drow   |
+| DataSet       | ds     |
+| DataTable     | tbl    |
+| DataView      | dv     |
+| Parameter     | parm   |
+
+| 三、WinForm Control 命名规范  |         |
+| ----------------------- | ------- |
+| 控件类型                    | 控件类型简写  |
+| BackgroundWorker        | bgw     |
+| BindingNavigator        | bdn     |
+| BindingSource           | bds     |
+| Button                  | btn     |
+| CheckBox                | chk     |
+| CheckedListBox          | clst    |
+| ColorDialog             | cdlg    |
+| ComboBox                | cbo     |
+| ContextMenuStrip        | cms     |
+| CrystalReportViewer     | crv     |
+| DataGrid                | dgrd    |
+| DataGridView            | dgv     |
+| DataSet                 | dts     |
+| DateTimePicker          | dtp     |
+| DirectoryEntry          | dre     |
+| DirectorySearcher       | drs     |
+| DomainUpDown            | dud     |
+| ErrorProvider           | err     |
+| EventLog                | evl     |
+| FileSystemWatcher       | fsw     |
+| FlowLayoutPanel         | flp     |
+| FolderBrowserDialog     | fbdlg   |
+| FontDialog              | fdlg    |
+| Form                    | frm     |
+| GroupBox                | grp     |
+| HelpProvider            | hlp     |
+| HscrollBar              | hsb     |
+| ImageList               | ilst    |
+| Label                   | lbl     |
+| LinkLabel               | llbl    |
+| ListBox                 | lst     |
+| ListView                | lvw     |
+| MainMenu                | mmnu    |
+| MaskedTextBox           | mtx     |
+| MenuStrip               | ms      |
+| MessageQueue            | msq     |
+| MonthCalendar           | cdr     |
+| NotifyIcon              | icn     |
+| NumeircUpDown           | nud     |
+| OpenFileDialog          | ofdlg   |
+| PageSetupDialog         | psdlg   |
+| Panel                   | pnl     |
+| PerformanceCounter      | pfc     |
+| PictureBox              | pic     |
+| PrintDialog             | pdlg    |
+| PrintDocument           | pdc     |
+| PrintPreviewControl     | prv     |
+| PrintPreviewDialog      | ppd     |
+| Process                 | prc     |
+| ProgressBar             | pgb     |
+| PropertyGrid            | prg     |
+| RadioButton             | rbtn    |
+| ReportDocument          | rpd     |
+| ReportViewer            | rpv     |
+| RichTextBox             | rtx     |
+| SaveFileDialog          | sfdlg   |
+| SerialPort              | spt     |
+| ServiceController       | scl     |
+| SplitContainer          | spc     |
+| Splitter                | spl     |
+| StatusBar               | stb     |
+| StatusStrip             | ss      |
+| TabControl              | tab     |
+| TableLayoutPanel        | tlp     |
+| TextBox                 | txt     |
+| Timer                   | tmr     |
+| ToolBar                 | tlb     |
+| ToolStrip               | ts      |
+| ToolStripButton         | tsbtn   |
+| ToolStripContainer      | tsc     |
+| ToolStripDropDownButton | tsddbtn |
+| ToolStripLabel          | tslbl   |
+| ToolStripMenuItem       | tsmi    |
+| ToolStripSeparator      | tss     |
+| ToolStripSplitButton    | tssbtn  |
+| ToolTip                 | tip     |
+| TrackBar                | trb     |
+| TreeView                | tvw     |
+| VscrollBar              | vsb     |
+| WebBrowser              | wbs     |
+
+| 四、WebControl 命名规范      |        |
+| ---------------------- | ------ |
+| 控件类型                   | 控件类型简写 |
+| Adrotator              | adrt   |
+| BulletedList           | blst   |
+| Button                 | btn    |
+| Calendar               | cal    |
+| CheckBox               | chk    |
+| CheckBoxList           | chkl   |
+| CompareValidator       | valc   |
+| CustomValidator        | valx   |
+| DataGrid               | dg     |
+| DataList               | dl     |
+| DetailsView            | dtv    |
+| DropDownList           | ddl    |
+| FileUpLoad             | fup    |
+| FormView               | fmv    |
+| GridView               | grv    |
+| HiddenField            | hfld   |
+| HyperLink              | lnk    |
+| Image                  | img    |
+| ImageButton            | ibtn   |
+| ImageMap               | imap   |
+| Label                  | lbl    |
+| LinkButton             | lbtn   |
+| ListBox                | lst    |
+| Literal                | ltl    |
+| Localize               | loc    |
+| MultiView              | mvw    |
+| Panel                  | pnl    |
+| PlaceHolder            | plh    |
+| RadioButton            | rad    |
+| RadioButtonList        | radl   |
+| RangeValidator         | valg   |
+| RegularExpression      | reg    |
+| Repeater               | rpt    |
+| RequiredFieldValidator | valr   |
+| SubStitution           | subs   |
+| Table                  | tbl    |
+| TableCell              | tblc   |
+| TableRow               | tblr   |
+| TextBox                | txt    |
+| ValidationSummary      | vals   |
+| View                   | vw     |
+| Wizard                 | wiz    |
