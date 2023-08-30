@@ -208,8 +208,6 @@
 | error         | err      | 错误  |
 
 > [.Net中控件的命名规则_基础应用_脚本之家 (jb51.net)](https://www.jb51.net/article/247298.htm)
-> 
-> 
 
 | 一、基本数据类型前缀 |        |
 | ---------- | ------ |
@@ -393,6 +391,62 @@ if __name__ == '__main__':
     MainWindow.show()
     sys.exit(app.exec_())
 ```
+
+套用qt_material
+
+```python
+if __name__ == '__main__':
+    import sys
+    from qt_material import apply_stylesheet
+
+    app = QtWidgets.QApplication(sys.argv)
+    MainWindow = QtWidgets.QMainWindow()
+
+    Ui = Ui_MainWindow()
+    Ui.setupUi(MainWindow)
+    apply_stylesheet(app, theme='dark_teal.xml')
+
+    MainWindow.show()
+    sys.exit(app.exec_())
+```
+
+qt_material主题样式
+
+```python
+from qt_material import list_themes
+
+list_themes()
+```
+
+```PYHTON
+WARNING:root:qt_material must be imported after PySide or PyQt!
+
+
+
+
+
+['dark_amber.xml',
+ 'dark_blue.xml',
+ 'dark_cyan.xml',
+ 'dark_lightgreen.xml',
+ 'dark_pink.xml',
+ 'dark_purple.xml',
+ 'dark_red.xml',
+ 'dark_teal.xml',
+ 'dark_yellow.xml',
+ 'light_amber.xml',
+ 'light_blue.xml',
+ 'light_cyan.xml',
+ 'light_cyan_500.xml',
+ 'light_lightgreen.xml',
+ 'light_pink.xml',
+ 'light_purple.xml',
+ 'light_red.xml',
+ 'light_teal.xml',
+ 'light_yellow.xml']
+```
+
+
 
 # QTPY5安装及使用方法
 
