@@ -90,19 +90,50 @@ if __name__ == '__main__':
     sys.exit(app.exec_())
 ```
 
-套用qt_material
+外部载入QSS
 
 ```python
 if __name__ == '__main__':
+    class CommonHelper:
+        def __init__(self):
+            pass
+
+        @staticmethod
+        def readQss(style):
+            with open(style, 'r') as f:
+                return f.read()
+
     import sys
-    from qt_material import apply_stylesheet
 
     app = QtWidgets.QApplication(sys.argv)
     MainWindow = QtWidgets.QMainWindow()
 
     Ui = Ui_MainWindow()
     Ui.setupUi(MainWindow)
-    apply_stylesheet(app, theme='dark_teal.xml')
+
+    # Ubuntu ElegantDark MaterialDark ConsoleStyle AMOLED Aqua ManjaroMix NeonButtons MacOS
+    styleFile = 'Ubuntu.qss'
+    qssStyle = CommonHelper.readQss(styleFile)
+    MainWindow.setStyleSheet(qssStyle)
+
+
+    MainWindow.show()
+    sys.exit(app.exec_())
+```
+
+套用qt_material
+
+```python
+if __name__ == '__main__':
+    import sys
+    from qt_material import apply_stylesheet
+
+    app = QtWidgets.QApplication(sys.argv)
+    MainWindow = QtWidgets.QMainWindow()
+
+    Ui = Ui_MainWindow()
+    Ui.setupUi(MainWindow)
+    apply_stylesheet(app, theme='dark_pink.xml')
 
     MainWindow.show()
     sys.exit(app.exec_())
@@ -141,7 +172,24 @@ WARNING:root:qt_material must be imported after PySide or PyQt!
  'light_yellow.xml']
 ```
 
-# QTPY5安装及使用方法
+# openpyxl函数使用
+
+```python
+from openpyxl import *
+
+wb = openpyxl.load_workbook('config.xlsx')
+ws = wb['Sheet1']
+
+v = ws.cell(1, 1).value
+mr = ws.max_row
+mc = ws.max_column
+
+print(v)
+print(mr)
+print(mc)
+```
+
+# Pyqt5安装及使用方法
 
 > https://zhuanlan.zhihu.com/p/162866700
 
