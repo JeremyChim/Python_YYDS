@@ -69,6 +69,53 @@
    > # @Github ：https://github.com/JeremyChim/${PROJECT_NAME}
    > ```
 
+# 循环加上进度条
+
+tqdm :  西班牙语中 tqdm 是 te quiero demasiado ( I love you so much ) 的缩写
+
+看来写这个函数的程序员还是个恋爱脑😂。。。
+
+```python
+from tqdm import tqdm
+from time import sleep
+
+for i in tqdm(range(100)):
+    sleep(0.1)
+```
+
+# 装饰器使用
+
+```python
+from time import time, sleep
+
+
+def run_time(func):
+    def wrapper(*args):
+        ts1 = time()
+        res = func(*args)
+        ts2 = time()
+        ts = ts2 - ts1
+        print(f'run time : {ts:.2f} s')
+        return res
+
+    return wrapper
+
+
+@run_time
+def fun(max):
+    for i in range(max):
+        # print(i)
+        sleep(0.01)
+
+    return True
+
+
+if __name__ == '__main__':
+
+    res = fun(10)
+    print(res)
+```
+
 # 将.qrc文件转换为.py(import xx_rc，运行报错)
 
 ```cmd
@@ -530,13 +577,11 @@ print(cf.getint('mysql', 'port'))  # 输出port
 ```python
 if __name__ == '__main__':
     from time import time
-    a = time()
-
-    fun()
-
-    b = time()
-    c = '%.2f' % float(b-a)
-    print(f'运行时间：{c}秒')
+    ts1 = time()
+    func()
+    ts2 = time()
+    ts = ts2 - ts1
+    print(f'运行时间：{ts:.2f}秒')
 ```
 
 # Subprocess函数的使用（adb交互）
