@@ -74,7 +74,7 @@
 ```python
 import sys
 from PyQt5.QtWidgets import QApplication, QWidget
-from untitled import Ui_Form    # 导入UI
+from win import Ui_Form    # 导入UI
 
 
 class Ui(Ui_Form):
@@ -100,9 +100,11 @@ if __name__ == '__main__':
 
     ui = Ui()
     ui.setupUi(win)
+
+    win.initWindow()
+    win.show()
+    app.exec()
 ```
-
-
 
 # 终端进度条 ( cmd )
 
