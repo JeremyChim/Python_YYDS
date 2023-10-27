@@ -69,6 +69,55 @@
    > # @Github ：https://github.com/JeremyChim/${PROJECT_NAME}
    > ```
 
+# QWidget继承
+
+```python
+import sys
+from PyQt5.QtWidgets import QApplication, QWidget
+from untitled import Ui_Form    # 导入UI
+
+
+class Ui(Ui_Form):
+    def __init__(self):
+        super().__init__()
+
+
+class Win(QWidget):
+    def __init__(self):
+        super().__init__()
+
+    def initWindow(self):
+        self.setWindowTitle('@Auth ： Jeremy.Chim')
+        desktop = QApplication.desktop().availableGeometry()
+        w, h = desktop.width(), desktop.height()
+        self.move(w//2 - self.width()//2, h//2 - self.height()//2)    # 窗口居中
+        self.show()
+
+
+if __name__ == '__main__':
+    app = QApplication(sys.argv)
+    win = Win()
+
+    ui = Ui()
+    ui.setupUi(win)
+```
+
+
+
+# 终端进度条 ( cmd )
+
+```python
+from rich.progress import track
+from time import sleep
+
+def do_step(step):
+    sleep(0.001)
+
+for step in track(range(1000)):
+    do_step(step)
+    # print(step)
+```
+
 # 循环加上进度条
 
 tqdm :  西班牙语中 tqdm 是 te quiero demasiado ( I love you so much ) 的缩写
@@ -79,7 +128,8 @@ tqdm :  西班牙语中 tqdm 是 te quiero demasiado ( I love you so much ) 的�
 from tqdm import tqdm
 from time import sleep
 
-for i in tqdm(range(100)):
+
+for i in tqdm(range(100), desc='title'):
     sleep(0.1)
 ```
 
