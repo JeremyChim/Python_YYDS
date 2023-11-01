@@ -61,13 +61,25 @@
    > 设置 > 编辑器 > 文件和代码模版 > Python Script
    > 
    > ```python
-   > # -*- coding: utf-8 -*-
-   > # @Time ： ${DATE} ${TIME}
-   > # @Auth ： Jeremy.Chim
-   > # @File ：${NAME}.py
-   > # @IDE ：${PRODUCT_NAME}
-   > # @Github ：https://github.com/JeremyChim/${PROJECT_NAME}
+   > """
+   > -*- coding: utf-8 -*-
+   > Time: ${DATE} ${TIME}
+   > Auth: Jeremy.Chim
+   > File: ${NAME}.py
+   > IDE: ${PRODUCT_NAME}
+   > Github: https://github.com/JeremyChim/${PROJECT_NAME}
+   > """
    > ```
+
+# except过于宽泛的错误
+
+```python
+# noinspection PyBroadExceptio
+try：
+    pass
+except：
+    pass
+```
 
 # QWidget继承
 
