@@ -67,7 +67,7 @@
    > Auth: Jeremy.Chim
    > File: ${NAME}.py
    > IDE: ${PRODUCT_NAME}
-   > Github: https://github.com/JeremyChim/${PROJECT_NAME}
+   > GitHub: https://github.com/JeremyChim/${PROJECT_NAME}
    > """
    > ```
 
