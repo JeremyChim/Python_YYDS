@@ -1,8 +1,15 @@
-# Python_YYDS
+<h1 align="center">Python_YYDS</h1>
+<p align="center">
+    <img alt="Static Badge" src="https://img.shields.io/badge/Auth-Jeremy-brightgreen">
+    <img alt="Static Badge" src="https://img.shields.io/badge/Version-v1.0.0-blue">
+    <img alt="Static Badge" src="https://img.shields.io/badge/ILovePython-pink">
+</p>
+
+## ☕介绍
 
 小铭用来记录下Python技巧的一个小本子🤣😃🤪🍕🍔🍟🌭🍿
 
-# 安装Python环境
+## 1、安装Python环境
 
 1. 下载[Python](https://www.python.org/downloads/windows/)
 
@@ -14,64 +21,264 @@
 
 5. 安装PyCharm插件
    
-   > Chinese (Simplified) Language Pack / 中文语言包
-   > 
-   > One Dark theme
-   > 
-   > CMD Support
+   - Chinese (Simplified) Language Pack / 中文语言包
+   
+   - One Dark theme
+   
+   - CMD Support
 
 6. 新建PycharmProject项目
    
-   > 选择：先前配置的解释器
-   > 
-   > 不勾选：创建main.py
+   - 选择：先前配置的解释器
+   
+   - 不勾选：创建main.py
 
 7. 添加PyCharm镜像源
    
-   > 文件 > 设置 > 项目 > Python解释器 > + > 管理仓库
-   > 
-   > | 镜像源 | 网址                                        | 推荐度   | 免翻墙 |
-   > |:--- |:----------------------------------------- |:----- |:---:|
-   > | 中科大 | https://pypi.mirrors.ustc.edu.cn/simple/  | ★★★★★ | √   |
-   > | 国外1 | https://pypi.sdutlinux.org                | ★★★★★ |     |
-   > | 国外2 | https://pypi.org/simple                   | ★★★★  |     |
-   > | 阿里云 | http://mirrors.aliyun.com/pypi/simple/    | ★★★   | √   |
-   > | 豆瓣  | http://pypi.douban.com/simple/            | ★★★   | √   |
-   > | 清华  | https://pypi.tuna.tsinghua.edu.cn/simple/ | ★★★   | √   |
-   > | 中科技 | http://pypi.mirrors.ustc.edu.cn/simple/   | ★★★   | √   |
+   - 文件 > 设置 > 项目 > Python解释器 > + > 管理仓库
+     
+     | 镜像源 | 网址                                        | 推荐度   | 免翻墙 |
+     |:--- |:----------------------------------------- |:----- |:---:|
+     | 中科大 | https://pypi.mirrors.ustc.edu.cn/simple/  | ★★★★★ | √   |
+     | 国外1 | https://pypi.sdutlinux.org                | ★★★★★ |     |
+     | 国外2 | https://pypi.org/simple                   | ★★★★  |     |
+     | 阿里云 | http://mirrors.aliyun.com/pypi/simple/    | ★★★   | √   |
+     | 豆瓣  | http://pypi.douban.com/simple/            | ★★★   | √   |
+     | 清华  | https://pypi.tuna.tsinghua.edu.cn/simple/ | ★★★   | √   |
+     | 中科技 | http://pypi.mirrors.ustc.edu.cn/simple/   | ★★★   | √   |
 
 8. 安装常用环境包
    
-   > pip3 install PyQt5
-   > 
-   > pip install PyQt5 -i https://pypi.douban.com/simple
-   > 
-   > 文件 > 设置 > 项目 > Python解释器 > +
-   > 
-   > | 包名           | 用途       |
-   > | ------------ | -------- |
-   > | pyinstaller  | 封装exe    |
-   > | ttkbootstrap | GUI界面    |
-   > | PyQt5        | GUI界面    |
-   > | openpyxl     | 读写 Excel |
-   > | folium       | 地图可视化    |
+   - pip3 install PyQt5
+   
+   - pip install PyQt5 -i https://pypi.douban.com/simple
+   
+   - 文件 > 设置 > 项目 > Python解释器 > +
+     
+     | 包名           | 用途       |
+     | ------------ | -------- |
+     | pyinstaller  | 封装exe    |
+     | ttkbootstrap | GUI界面    |
+     | PyQt5        | GUI界面    |
+     | openpyxl     | 读写 Excel |
+     | folium       | 地图可视化    |
 
 9. 添加PyCharm签名
    
-   > 设置 > 编辑器 > 文件和代码模版 > Python Script
-   > 
-   > ```python
-   > """
-   > -*- coding: utf-8 -*-
-   > Time: ${DATE} ${TIME}
-   > Auth: Jeremy.Chim
-   > File: ${NAME}.py
-   > IDE: ${PRODUCT_NAME}
-   > GitHub: https://github.com/JeremyChim/${PROJECT_NAME}
-   > """
-   > ```
+   设置 > 编辑器 > 文件和代码模版 > Python Script
+   
+   ```python
+   """
+   -*- coding: utf-8 -*-
+   Time: ${DATE} ${TIME}
+   Auth: Jeremy.Chim
+   File: ${NAME}.py
+   IDE: ${PRODUCT_NAME}
+   GitHub: https://github.com/JeremyChim/${PROJECT_NAME}
+   """
+   ```
 
-# except过于宽泛的错误
+## 2、Python技巧
+
+### .gitignore 忽略文件规则（python）
+
+```gitignore
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+#  Usually these files are written by a python script from a template
+#  before PyInstaller builds the exe, so as to inject date/other infos into it.
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+cover/
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff:
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+# Flask stuff:
+instance/
+.webassets-cache
+
+# Scrapy stuff:
+.scrapy
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+.pybuilder/
+target/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+# pyenv
+#   For a library or package, you might want to ignore these files since the code is
+#   intended to run in multiple environments; otherwise, check them in:
+# .python-version
+
+# pipenv
+#   According to pypa/pipenv#598, it is recommended to include Pipfile.lock in version control.
+#   However, in case of collaboration, if having platform-specific dependencies or dependencies
+#   having no cross-platform support, pipenv may install dependencies that don't work, or not
+#   install all needed dependencies.
+#Pipfile.lock
+
+# poetry
+#   Similar to Pipfile.lock, it is generally recommended to include poetry.lock in version control.
+#   This is especially recommended for binary packages to ensure reproducibility, and is more
+#   commonly ignored for libraries.
+#   https://python-poetry.org/docs/basic-usage/#commit-your-poetrylock-file-to-version-control
+#poetry.lock
+
+# pdm
+#   Similar to Pipfile.lock, it is generally recommended to include pdm.lock in version control.
+#pdm.lock
+#   pdm stores project-wide configurations in .pdm.toml, but it is recommended to not include it
+#   in version control.
+#   https://pdm.fming.dev/#use-with-ide
+.pdm.toml
+
+# PEP 582; used by e.g. github.com/David-OConnor/pyflow and github.com/pdm-project/pdm
+__pypackages__/
+
+# Celery stuff
+celerybeat-schedule
+celerybeat.pid
+
+# SageMath parsed files
+*.sage.py
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# pytype static type analyzer
+.pytype/
+
+# Cython debug symbols
+cython_debug/
+
+# PyCharm
+#  JetBrains specific template is maintained in a separate JetBrains.gitignore that can
+#  be found at https://github.com/github/gitignore/blob/main/Global/JetBrains.gitignore
+#  and can be added to the global gitignore or merged into this file.  For a more nuclear
+#  option (not recommended) you can uncomment the following to ignore the entire idea folder.
+.idea/
+
+```
+
+### Readme 自诉文件模板
+
+```markdown
+<p align="center"><img src="img\logo.png" width="200"/></p>
+<h1 align="center">项目名</h1>
+<p align="center">
+    <img alt="Static Badge" src="https://img.shields.io/badge/Auth-Jeremy-brightgreen">
+    <img alt="Static Badge" src="https://img.shields.io/badge/Version-v1.0.0-blue">
+    <img alt="Static Badge" src="https://img.shields.io/badge/EnjoyDota-pink">
+</p>
+
+## ☕介绍
+。。。
+
+
+## 🌭安装
+###。。。
+###。。。
+###。。。
+
+
+## 🍕使用
+###。。。
+###。。。
+###。。。
+
+
+## 🍦联系
+GitHub：[JeremyChim (github.com)](https://github.com/JeremyChim)
+E-Mail：[jer888chim@outlook.com](mailto:jer888chim@outlook.com)
+```
+
+### except过于宽泛的错误
 
 ```python
 # noinspection PyBroadExceptio
@@ -81,7 +288,7 @@ except：
     pass
 ```
 
-# QWidget继承
+### QWidget继承
 
 ```python
 import sys
@@ -118,7 +325,7 @@ if __name__ == '__main__':
     app.exec()
 ```
 
-# 终端进度条 ( cmd )
+### 终端进度条 ( cmd )
 
 ```python
 from rich.progress import track
@@ -132,7 +339,7 @@ for step in track(range(1000)):
     # print(step)
 ```
 
-# 循环加上进度条
+### 循环加上进度条
 
 tqdm :  西班牙语中 tqdm 是 te quiero demasiado ( I love you so much ) 的缩写
 
@@ -147,7 +354,7 @@ for i in tqdm(range(100), desc='title'):
     sleep(0.1)
 ```
 
-# 装饰器使用
+### 装饰器使用
 
 ```python
 from time import time, sleep
@@ -180,13 +387,13 @@ if __name__ == '__main__':
     print(res)
 ```
 
-# 将.qrc文件转换为.py(import xx_rc，运行报错)
+### 将.qrc文件转换为.py(import xx_rc，运行报错)
 
 ```cmd
 pyrcc5 resource.qrc -o resource_rc.py
 ```
 
-# QT-Designer创建MainWindow
+### QT-Designer创建MainWindow
 
 ```python
 if __name__ == '__main__':
@@ -201,7 +408,7 @@ if __name__ == '__main__':
     sys.exit(app.exec_())
 ```
 
-外部载入QSS
+### 外部载入QSS
 
 ```python
 if __name__ == '__main__':
@@ -232,7 +439,7 @@ if __name__ == '__main__':
     sys.exit(app.exec_())
 ```
 
-套用qt_material
+### 套用qt_material
 
 ```python
 if __name__ == '__main__':
@@ -250,7 +457,7 @@ if __name__ == '__main__':
     sys.exit(app.exec_())
 ```
 
-qt_material主题样式
+### qt_material主题样式
 
 ```python
 from qt_material import list_themes
@@ -283,7 +490,7 @@ WARNING:root:qt_material must be imported after PySide or PyQt!
  'light_yellow.xml']
 ```
 
-# openpyxl函数使用
+### openpyxl函数使用
 
 ```python
 from openpyxl import *
@@ -300,18 +507,15 @@ print(mr)
 print(mc)
 ```
 
-# Pyqt5安装及使用方法
+### Pyqt5安装及使用方法
 
 > https://zhuanlan.zhihu.com/p/162866700
 
-# 使用UPX技术优化封装包
+### 使用UPX技术优化封装包
 
 1. 下载[UPX](https://upx.github.io/)
-
 2. 解压（只需要upx.exe文件）
-
 3. 放入路径：D:\Python\Scripts\upx.exe（和pyinstaller.exe同级）
-
 4. 封装，会发现exe包小了
 
 > 实测数据
@@ -322,7 +526,7 @@ print(mc)
 > | Great Wall.exe     | 22.5 MB | 15.5 MB | 7 MB   |
 > | layout.exe         | 34.6 MB | 27.0 MB | 7.6 MB |
 
-# 封装py文件的bat脚本
+### 封装py文件的bat脚本
 
 ```batch
 Pyinstaller -F app.py
@@ -346,7 +550,7 @@ Pyinstaller -F -w -i app.ico app.py
 pause
 ```
 
-# ttk的ui使用super()函数的原理
+### ttk的ui使用super()函数的原理
 
 ```python
 import ttkbootstrap as ttk
@@ -370,9 +574,7 @@ if __name__ == '__main__':
     # w.mainloop()
 ```
 
-# tkk模版
-
-[win.py](./win.py)
+### tkk模版
 
 ```python
 # 外部函数调用（指定函数）
@@ -601,7 +803,7 @@ if __name__ == '__main__':
     w.mainloop()
 ```
 
-# ini配置文件的使用
+### ini配置文件的使用
 
 ```ini
 [mysql]
@@ -636,7 +838,7 @@ print(cf.get('mysql', 'host'))  # 输出mysql 下配置项host的值
 print(cf.getint('mysql', 'port'))  # 输出port
 ```
 
-# 计算函数运行时间
+### 计算函数运行时间
 
 ```python
 if __name__ == '__main__':
@@ -648,9 +850,7 @@ if __name__ == '__main__':
     print(f'运行时间：{ts:.2f}秒')
 ```
 
-# Subprocess函数的使用（adb交互）
-
-[adb.py](./adb.py)
+### Subprocess函数的使用（adb交互）
 
 ```python
 from subprocess import *
@@ -678,8 +878,6 @@ if __name__ == '__main__':
     print(out, err)
 ```
 
-[byte.py](./byte.py)
-
 ```python
 def ret_byte(a:list):
     a = "\n".join(a) + "\n"
@@ -698,8 +896,6 @@ if __name__ == '__main__':
     print(ret_byte(d))
 ```
 
-[str.py](./str.py)
-
 ```python
 def ret_str(a:bytes):
     a = a.decode('utf-8')
@@ -716,304 +912,14 @@ if __name__ == '__main__':
     print(ret_str(d))
 ```
 
-# 常用的变量命名缩写
+### 常用的变量命名缩写
 
-> [编程语言中常用的变量命名缩写_假如我年华正好的博客-CSDN博客](https://blog.csdn.net/qq_37851620/article/details/94731227)
+[编程语言中常用的变量命名缩写_假如我年华正好的博客-CSDN博客](https://blog.csdn.net/qq_37851620/article/details/94731227)
 
-| 全称             | 缩写   | 翻译   |
-| -------------- | ---- | ---- |
-| calculate      | calc | 计算   |
-| addition       | add  | 加    |
-| subtraction    | sub  | 减    |
-| multiplication | mul  | 乘法   |
-| division       | div  | 除法   |
-| hexadecimal    | hex  | 十六进制 |
+[.Net中控件的命名规则_基础应用_脚本之家 (jb51.net)](https://www.jb51.net/article/247298.htm)
 
-| 全称         | 缩写   | 翻译    |
-| ---------- | ---- | ----- |
-| array      | arr  | 数组、集合 |
-| list       | lst  | 列表    |
-| Sequence   | seq  |       |
-| Segment(s) | seg  |       |
-| stack      | stk  | 栈     |
-| dictionary | dict | 字典    |
-| character  | char | 字符    |
-| string     | str  | 字符串   |
-| text       | txt  | 文本    |
-| float      | flt  | 浮动、浮点 |
-| number     | num  | 数量、编号 |
-| image      | img  | 图像    |
-| bitmap     | bmp  | 位图    |
-| table      | tbl  | 表     |
-| link       | lnk  | 链接    |
-| lable      | lbl  | 标签    |
-| flag       | flg  | 标志    |
-| container  | cntr | 容器    |
-| time stamp | ts   | 时间戳   |
-| length     | len  | 长度    |
-| positive   | pos  |       |
-| negative   | neg  |       |
+## 🍦联系
 
-| 全称           | 缩写   | 翻译    |
-| ------------ | ---- | ----- |
-| statistic    | stat | 统计    |
-| summation    | sum  | 和     |
-| average      | avg  | 平均    |
-| maximum      | max  | 最大值   |
-| minimum      | min  | 最小值   |
-| middle       | mid  | 中值    |
-| increment    | inc  | 增加、增量 |
-| increase     | inc  | 增加    |
-| decrease     | dec  | 减少    |
-| different    | diff | 不同的   |
-| frequency    | freq | 频率    |
-| optimization | opt  | 最优    |
-| total        | tot  | 全部的   |
-| vertical     | vert | 垂直    |
-| horizontal   | horz | 水平    |
+GitHub：[JeremyChim (github.com)](https://github.com/JeremyChim)
 
-| 全称        | 缩写        | 翻译    |
-| --------- | --------- | ----- |
-| row       | row       | 行     |
-| column    | col       | 列     |
-| positon   | pos       | 位置    |
-| point     | pt        | 点     |
-| pointer   | ptr       | 指针    |
-| index     | idx / ndx | 索引、指示 |
-| value     | val       | 值     |
-| reference | ref       | 引用    |
-
-| 全称          | 缩写       | 翻译    |
-| ----------- | -------- | ----- |
-| status      | stat     | 状态    |
-| original    | orig     | 原件    |
-| source      | src      | 源头    |
-| address     | addr     | 地址    |
-| coordinates | coord    | 坐标    |
-| previous    | pre      | 前一个   |
-| current     | cur      | 当前的   |
-| initalize   | init     | 初始化   |
-| destination | dst/dest | 目的    |
-| iteration   | itr/iter | 循环、迭代 |
-| count       | cnt      | 计数器   |
-
-| 全称        | 缩写       | 翻译    |
-| --------- | -------- | ----- |
-| temporary | temp或tmp | 临时    |
-| source    | src      | 源头    |
-| resource  | res      | 资源    |
-| result    | res      | 结果    |
-| return    | ret      | 返回    |
-| return    | rtn      | 返回    |
-| answer    | ans      | 响应、回答 |
-| buffer    | buf或buff | 缓冲区   |
-
-| 全称            | 缩写  | 翻译  |
-| ------------- | --- | --- |
-| database      | db  | 数据库 |
-| administrator | adm | 管理员 |
-| password      | pwd | 密码  |
-| user          | usr | 用户  |
-
-| 全称        | 缩写    | 翻译     |
-| --------- | ----- | ------ |
-| directory | dir   | 目录     |
-| document  | doc   | 文档     |
-| library   | lib   | 库      |
-| function  | func  | 函数     |
-| object    | obj   | 对象     |
-| argument  | arg   | 实参     |
-| instance  | ins   | 实例     |
-| variable  | var   | 变量     |
-| parameter | param | 参数(形参) |
-
-| 全称            | 缩写       | 翻译  |
-| ------------- | -------- | --- |
-| encode        | enc      | 编码  |
-| print         | prn      | 打印  |
-| delete        | del      | 删除  |
-| insert        | ins      | 插入  |
-| error         | err      | 错误  |
-| break         | brk      | 间断  |
-| package       | pkg      | 打包  |
-| escape        | esc      | 退出  |
-| execute       | exec     | 执行  |
-| command       | cmd      | 命令  |
-| configuration | config   | 配置  |
-| edit          | edt      | 编辑  |
-| display       | disp     | 显示  |
-| initialize    | init     | 初始化 |
-| trigger       | trig     | 触发  |
-| capture       | cap或capt | 捕获  |
-| system        | sys      | 系统  |
-| environment   | env      | 环境  |
-| window        | win(wnd) | 窗口  |
-| device        | dev      | 设备  |
-| message       | msg      | 消息  |
-| signal        | sig      | 信号  |
-| information   | info     | 信息  |
-| error         | err      | 错误  |
-
-> [.Net中控件的命名规则_基础应用_脚本之家 (jb51.net)](https://www.jb51.net/article/247298.htm)
-
-| 一、基本数据类型前缀 |        |
-| ---------- | ------ |
-| 数据类型       | 数据类型简写 |
-| Array      | arr    |
-| Boolean    | bln    |
-| Byte       | byt    |
-| Char       | chr    |
-| DateTime   | dtm    |
-| Decimal    | dec    |
-| Double     | dbl    |
-| Integer    | int    |
-| Long       | lng    |
-| Object     | obj    |
-| Short      | shr    |
-| Single     | sng    |
-| String     | str    |
-
-| 二、ADO.NET对象前缀 |        |
-| ------------- | ------ |
-| 控件类型          | 控件类型简写 |
-| Command       | cmd    |
-| Connection    | conn   |
-| DataAdapter   | da     |
-| DataColumn    | dcol   |
-| DataReader    | dr     |
-| DataRelation  | Drel   |
-| DataRow       | drow   |
-| DataSet       | ds     |
-| DataTable     | tbl    |
-| DataView      | dv     |
-| Parameter     | parm   |
-
-| 三、WinForm Control 命名规范  |         |
-| ----------------------- | ------- |
-| 控件类型                    | 控件类型简写  |
-| BackgroundWorker        | bgw     |
-| BindingNavigator        | bdn     |
-| BindingSource           | bds     |
-| Button                  | btn     |
-| CheckBox                | chk     |
-| CheckedListBox          | clst    |
-| ColorDialog             | cdlg    |
-| ComboBox                | cbo     |
-| ContextMenuStrip        | cms     |
-| CrystalReportViewer     | crv     |
-| DataGrid                | dgrd    |
-| DataGridView            | dgv     |
-| DataSet                 | dts     |
-| DateTimePicker          | dtp     |
-| DirectoryEntry          | dre     |
-| DirectorySearcher       | drs     |
-| DomainUpDown            | dud     |
-| ErrorProvider           | err     |
-| EventLog                | evl     |
-| FileSystemWatcher       | fsw     |
-| FlowLayoutPanel         | flp     |
-| FolderBrowserDialog     | fbdlg   |
-| FontDialog              | fdlg    |
-| Form                    | frm     |
-| GroupBox                | grp     |
-| HelpProvider            | hlp     |
-| HscrollBar              | hsb     |
-| ImageList               | ilst    |
-| Label                   | lbl     |
-| LinkLabel               | llbl    |
-| ListBox                 | lst     |
-| ListView                | lvw     |
-| MainMenu                | mmnu    |
-| MaskedTextBox           | mtx     |
-| MenuStrip               | ms      |
-| MessageQueue            | msq     |
-| MonthCalendar           | cdr     |
-| NotifyIcon              | icn     |
-| NumeircUpDown           | nud     |
-| OpenFileDialog          | ofdlg   |
-| PageSetupDialog         | psdlg   |
-| Panel                   | pnl     |
-| PerformanceCounter      | pfc     |
-| PictureBox              | pic     |
-| PrintDialog             | pdlg    |
-| PrintDocument           | pdc     |
-| PrintPreviewControl     | prv     |
-| PrintPreviewDialog      | ppd     |
-| Process                 | prc     |
-| ProgressBar             | pgb     |
-| PropertyGrid            | prg     |
-| RadioButton             | rbtn    |
-| ReportDocument          | rpd     |
-| ReportViewer            | rpv     |
-| RichTextBox             | rtx     |
-| SaveFileDialog          | sfdlg   |
-| SerialPort              | spt     |
-| ServiceController       | scl     |
-| SplitContainer          | spc     |
-| Splitter                | spl     |
-| StatusBar               | stb     |
-| StatusStrip             | ss      |
-| TabControl              | tab     |
-| TableLayoutPanel        | tlp     |
-| TextBox                 | txt     |
-| Timer                   | tmr     |
-| ToolBar                 | tlb     |
-| ToolStrip               | ts      |
-| ToolStripButton         | tsbtn   |
-| ToolStripContainer      | tsc     |
-| ToolStripDropDownButton | tsddbtn |
-| ToolStripLabel          | tslbl   |
-| ToolStripMenuItem       | tsmi    |
-| ToolStripSeparator      | tss     |
-| ToolStripSplitButton    | tssbtn  |
-| ToolTip                 | tip     |
-| TrackBar                | trb     |
-| TreeView                | tvw     |
-| VscrollBar              | vsb     |
-| WebBrowser              | wbs     |
-
-| 四、WebControl 命名规范      |        |
-| ---------------------- | ------ |
-| 控件类型                   | 控件类型简写 |
-| Adrotator              | adrt   |
-| BulletedList           | blst   |
-| Button                 | btn    |
-| Calendar               | cal    |
-| CheckBox               | chk    |
-| CheckBoxList           | chkl   |
-| CompareValidator       | valc   |
-| CustomValidator        | valx   |
-| DataGrid               | dg     |
-| DataList               | dl     |
-| DetailsView            | dtv    |
-| DropDownList           | ddl    |
-| FileUpLoad             | fup    |
-| FormView               | fmv    |
-| GridView               | grv    |
-| HiddenField            | hfld   |
-| HyperLink              | lnk    |
-| Image                  | img    |
-| ImageButton            | ibtn   |
-| ImageMap               | imap   |
-| Label                  | lbl    |
-| LinkButton             | lbtn   |
-| ListBox                | lst    |
-| Literal                | ltl    |
-| Localize               | loc    |
-| MultiView              | mvw    |
-| Panel                  | pnl    |
-| PlaceHolder            | plh    |
-| RadioButton            | rad    |
-| RadioButtonList        | radl   |
-| RangeValidator         | valg   |
-| RegularExpression      | reg    |
-| Repeater               | rpt    |
-| RequiredFieldValidator | valr   |
-| SubStitution           | subs   |
-| Table                  | tbl    |
-| TableCell              | tblc   |
-| TableRow               | tblr   |
-| TextBox                | txt    |
-| ValidationSummary      | vals   |
-| View                   | vw     |
-| Wizard                 | wiz    |
+E-Mail：[jer888chim@outlook.com](mailto:jer888chim@outlook.com)
