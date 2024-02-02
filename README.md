@@ -1,7 +1,7 @@
 <h1 align="center">Python_YYDS</h1>
 <p align="center">
     <img alt="Static Badge" src="https://img.shields.io/badge/Auth-Jeremy-brightgreen">
-    <img alt="Static Badge" src="https://img.shields.io/badge/Version-v1.0.0-blue">
+    <img alt="Static Badge" src="https://img.shields.io/badge/Version-v1.1.0-blue">
     <img alt="Static Badge" src="https://img.shields.io/badge/ILovePython-pink">
 </p>
 
@@ -63,11 +63,43 @@
      | openpyxl     | 读写 Excel |
      | folium       | 地图可视化    |
 
+
+    ```bat
+    pip3 install pyinstaller 	-i https://pypi.douban.com/simple
+    pip3 install tqdm 			-i https://pypi.douban.com/simple
+    pip3 install windnd 		-i https://pypi.douban.com/simple
+    pip3 install configparser 	-i https://pypi.douban.com/simple
+    pip3 install numpy 			-i https://pypi.douban.com/simple
+    pip3 install Pandas 		-i https://pypi.douban.com/simple
+    pip3 install folium 		-i https://pypi.douban.com/simple
+    pip3 install ttkbootstrap 	-i https://pypi.douban.com/simple
+    pip3 install pyqt5 			-i https://pypi.douban.com/simple
+    pip3 install rich 			-i https://pypi.douban.com/simple
+    cmd
+    ```
+
 9. 添加PyCharm签名
    
    设置 > 编辑器 > 文件和代码模版 > Python Script
-   
+
+    ```python
+    # version:  v2.0
+    # time:     2024.02.02
+
+    # -*- coding: utf-8 -*-
+    """
+    Time:   ${DATE} ${TIME}
+    Auth:   Jeremy.Chim
+    File:   ${NAME}.py
+    IDE:    ${PRODUCT_NAME}
+    GitHub: https://github.com/JeremyChim/${PROJECT_NAME}
+    """
+   ```
+
    ```python
+   # version: v1.0
+   # time : 2023.07.03
+
    """
    -*- coding: utf-8 -*-
    Time: ${DATE} ${TIME}
