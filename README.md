@@ -82,6 +82,21 @@
    
    设置 > 编辑器 > 文件和代码模版 > Python Script
 
+   ```python
+    # version:  v3.0
+    # time:     2024.03.10
+   
+    # -*- coding: utf-8 -*-
+    """
+    Time:   ${DATE} ${TIME}
+    Auth:   Jeremy
+    File:   ${NAME}.py
+    IDE:    ${PRODUCT_NAME}
+    GitHub: https://github.com/JeremyChim
+    E-mail: jer888chim@outlook.com
+    """
+   ```
+
     ```python
     # version:  v2.0
     # time:     2024.02.02
