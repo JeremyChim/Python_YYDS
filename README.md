@@ -127,6 +127,16 @@
 
 ## 2、Python技巧
 
+### bat
+
+```bat
+pip freeze > requirements.txt
+pip install -r requirements.txt
+pyuic6.exe untitled.ui -o untitled.py
+pyinstaller -F -w app.py
+pyinstaller.exe app.spec
+```
+
 ### .gitignore 忽略文件规则（python）
 
 ```gitignore
