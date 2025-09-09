@@ -62,26 +62,25 @@
      | PyQt5        | GUI界面    |
      | openpyxl     | 读写 Excel |
      | folium       | 地图可视化    |
-
-
-    ```bat
-    pip3 install pyinstaller 	-i https://pypi.douban.com/simple
-    pip3 install tqdm 			-i https://pypi.douban.com/simple
-    pip3 install windnd 		-i https://pypi.douban.com/simple
-    pip3 install configparser 	-i https://pypi.douban.com/simple
-    pip3 install numpy 			-i https://pypi.douban.com/simple
-    pip3 install Pandas 		-i https://pypi.douban.com/simple
-    pip3 install folium 		-i https://pypi.douban.com/simple
-    pip3 install ttkbootstrap 	-i https://pypi.douban.com/simple
-    pip3 install pyqt5 			-i https://pypi.douban.com/simple
-    pip3 install rich 			-i https://pypi.douban.com/simple
-    cmd
-    ```
+     
+     ```bat
+     pip3 install pyinstaller     -i https://pypi.douban.com/simple
+     pip3 install tqdm             -i https://pypi.douban.com/simple
+     pip3 install windnd         -i https://pypi.douban.com/simple
+     pip3 install configparser     -i https://pypi.douban.com/simple
+     pip3 install numpy             -i https://pypi.douban.com/simple
+     pip3 install Pandas         -i https://pypi.douban.com/simple
+     pip3 install folium         -i https://pypi.douban.com/simple
+     pip3 install ttkbootstrap     -i https://pypi.douban.com/simple
+     pip3 install pyqt5             -i https://pypi.douban.com/simple
+     pip3 install rich             -i https://pypi.douban.com/simple
+     cmd
+     ```
 
 9. 添加PyCharm签名
    
    设置 > 编辑器 > 文件和代码模版 > Python Script
-
+   
    ```python
     # version:  v3.0
     # time:     2024.03.10
@@ -96,25 +95,25 @@
     E-mail: jer888chim@outlook.com
     """
    ```
-
-    ```python
-    # version:  v2.0
-    # time:     2024.02.02
-
-    # -*- coding: utf-8 -*-
-    """
-    Time:   ${DATE} ${TIME}
-    Auth:   Jeremy.Chim
-    File:   ${NAME}.py
-    IDE:    ${PRODUCT_NAME}
-    GitHub: https://github.com/JeremyChim/${PROJECT_NAME}
-    """
+   
+   ```python
+   # version:  v2.0
+   # time:     2024.02.02
+   
+   # -*- coding: utf-8 -*-
+   """
+   Time:   ${DATE} ${TIME}
+   Auth:   Jeremy.Chim
+   File:   ${NAME}.py
+   IDE:    ${PRODUCT_NAME}
+   GitHub: https://github.com/JeremyChim/${PROJECT_NAME}
+   """
    ```
-
+   
    ```python
    # version: v1.0
    # time : 2023.07.03
-
+   
    """
    -*- coding: utf-8 -*-
    Time: ${DATE} ${TIME}
@@ -126,6 +125,25 @@
    ```
 
 ## 2、Python技巧
+
+### lambda循环时的闭包问题
+
+```python
+# 这个例子展示了Python中闭包和变量作用域的行为差异
+# 在第一个列表中，所有的lambda函数共享同一个变量i的引用，
+# 当这些函数被调用时，i的值已经是循环结束时的最终值5
+
+# 创建一个包含6个lambda函数的列表，每个函数都打印变量i的值
+# 由于闭包的特性，所有函数共享同一个i变量的引用
+fs = [lambda: print(i) for i in range(6)]
+[f() for f in fs]  # 调用所有函数，输出结果为：5 5 5 5 5 5
+
+# 通过使用默认参数x=i，将循环变量i在每次迭代时的值捕获下来
+# 这样每个lambda函数都有自己独立的x变量副本
+fs = [lambda x=i: print(x) for i in range(6)]
+[f() for f in fs] # 调用所有函数，输出结果为：0 1 2 3 4 5
+输出 0 1 2 3 4 5
+```
 
 ### bat
 
@@ -180,6 +198,7 @@ except：
 ```
 
 ### QWidget继承 Qt6
+
 ```python
 import sys
 from PyQt6.QtWidgets import QApplication, QWidget
